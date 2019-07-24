@@ -1,14 +1,21 @@
 name: hrrr
 channels:
+  - defaults
   - conda-forge
 dependencies:
-  - geoviews
+  - cartopy
+  - xarray
+  - zarr
+  - netcdf4
+  - bokeh  
   - datashader
-  - holoviews=1.12.1
+  - holoviews=1.12.1  
+  - geoviews
+  - hvplot  
   - panel
-  - param
-  - bokeh
-  - hvplot
+  - intake
+  - intake-xarray
+  - metpy
   - pip
   - pip:
     - git+https://github.com/intake/xrviz.git
